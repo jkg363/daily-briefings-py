@@ -40,6 +40,7 @@ def get_hourly_forecasts(zip_code=MY_ZIP, country_code=COUNTRY_CODE):
     return result
 
 if __name__ == "__main__":
+    # only run the code below if this script has been run from the command-line... not when we're importing functions from this script into another script
 
     if APP_ENV == "development":
         zip_code = input("PLEASE INPUT A ZIP CODE (e.g. 06510): ")
